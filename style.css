@@ -1,0 +1,325 @@
+:root{
+    --main_color_green: #90953B;
+    --main_color_yell:yellow;
+    --main_color_litegreen:#7B924F;
+
+    --btn-color: #fff;
+    --color-default: #0a0d13;
+    --color-secondary:black;
+
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+
+    --fs_12: 12px;
+    --fs_16: 16px;
+    --fs_20: 20px;
+    --fs_24: 24px;
+    --fs_30: 30px;
+    --fs_35: 35px;
+    --fs_56: 56px;
+    
+}
+
+a{
+    text-decoration: none !important;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* --------- HEADER ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    header{
+        background-color: var(--main_color_green);
+        font-family: var(--font-default);
+
+    }
+
+    #menuimg{
+        height: 35px;
+    }
+    
+    nav a{
+        border-bottom: 4px solid #ffffff00 !important;
+    }
+    
+    nav a:hover{
+        border-color: var(--main_color_yell) !important;
+    }
+    
+    nav .active{
+        border-color: var(--main_color_yell) !important;
+    }
+    
+/* ----------------------------------------------------------------------------- */
+/* --------- home ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    #home{
+        height: 75vh;
+        background-color: #78853F;
+        right: 0;
+    }
+
+    #home > .container{
+        height: 105%;
+
+        background-image: url(./images/slider-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        top: 3rem;
+    }
+    .home_card h3{
+        color: var(--main_color_yell);
+    }
+    .home_card h1{
+        font-size: var(--fs_56) !important;
+    }
+
+    .home_card p{
+        font-family: var(--font-default);
+    }
+    
+    .home_card button{
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        outline: none;
+        border: none;
+        margin-right: 2rem;
+    }
+    
+    .readmore{
+        background-color: var(--main_color_yell);
+    }
+
+/* ----------------------------------------------------------------------------- */
+/* --------- home carousal ---------------------------------------------------------------- */
+
+#home .carousel-indicators{
+    top: 85%;
+    left: -12% !important;
+}
+    
+#home .carousel-indicators>button{
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-color: var(--main_color_yell);
+    opacity: 1;
+}
+
+#home .carousel-indicators .active{
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --------- offer / page 2 ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+#offer img{
+    height: 115px !important;
+    width: 110px !important;
+    padding: 2rem;
+    display: block;
+    background-color: #E4E7EB ;
+}
+
+
+#offer img:hover{
+    background-color: var(--main_color_green);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --------- about / page 3 ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+#p3_cont input{
+    width: 10rem;
+    font-size: var(--fs_16);
+    padding: 0.6rem 0;
+    outline: none;
+    border: none;
+    background-color: var(--main_color_yell);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --------- feedback / page 4 ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    .wrapper{
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border: 5px solid var(--main_color_litegreen);
+        margin-bottom: 30px;
+    }
+    .p4_cont span{
+        font-size: var(--fs_24);
+        margin-bottom: 20px;
+    }
+    
+    .p4_cont article{
+        color: #565656;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .p4_cont p{
+        line-height: 2rem;
+    }
+    .quote{
+        width: 45px;
+        height: 50px;
+    }
+
+/* ----------------------------------------------------------------------------- */
+/* --------- feedabck carousel ---------------------------------------------------------------- */
+
+    .carousel-control-prev > .carousel-control-prev-icon , .carousel-control-next > .carousel-control-next-icon{
+        width: 45px !important;
+        height: 50px !important;
+        opacity: 1 !important;
+        background-color: var(--main_color_green) !important;
+    }
+    
+/* ----------------------------------------------------------------------------- */
+/* ---------  page 5 ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    #page5{
+        background-color: var(--main_color_green);
+    }
+    #p5_mailbox button{
+        width: 150px;
+        padding: 1rem;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #FF0000;
+        border: none;
+    }
+    #p5_map{
+        height: 450px;
+    
+    }
+    #foot_top_butt button{
+        width: 130px;
+        height: 100%;
+        color: black;
+        background-color: var(--main_color_yell);
+        border: none;
+    
+        right: 0%;
+    
+    }
+    
+
+/* ----------------------------------------------------------------------------- */
+/* --------- footer ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    #footer{
+        background-color: #0a0d13;
+    }
+
+    .ft_box{
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .ft_box > span{
+        height: 50px;
+        display: grid;
+        align-items: flex-end;
+    }
+
+
+    footer #copyright {
+        width: 100%;
+        height: 40px;
+        background-color:  var(--main_color_green);
+    
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        line-height: 240%;
+      }
+
+
+/* --------------------------------------------------------------------------------- */
+/* -------   media query --1  ---------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width:768px){
+    .carousel-control-prev > .carousel-control-prev-icon , .carousel-control-next > .carousel-control-next-icon{
+        margin-bottom: 5rem;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* -------   media query --2  ---------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+@media (max-width:576px){
+
+    #home{
+        height: 60vh;
+        text-align: center;
+    }
+    #home > .container{
+        height: 105%;
+        width: 90%;
+        background-position: 0%;
+
+        top: 2rem;
+    }
+    .home_card h3{
+        font-size: var(--fs_20) !important;
+    }
+    .home_card h1{
+        font-size: var(--fs_35) !important;
+    }
+    .p1buttt{
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .home_card button{
+        margin: 0 !important;
+    }
+/* ----------------------------------------------------------------------------- */
+/* --------- home carousal ---------------------------------------------------------------- */
+
+    #home .carousel-indicators{
+        left: 1% !important;
+    }
+
+
+    .carousel-control-prev > .carousel-control-prev-icon , .carousel-control-next > .carousel-control-next-icon{
+        width: 35px !important;
+        height: 30px !important;
+       
+        position: absolute;
+        top: 30%;
+    }
+
+    #footer input , #footer button{
+        font-size: var(--fs_12);
+    }
+}
+
+
+@media (max-width:3906px){
+    #home{
+        height: 500px;
+    }
+    #home .carousel-indicators{
+        top: 90%;
+    }
+
+}
